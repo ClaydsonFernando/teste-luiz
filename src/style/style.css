@@ -1,0 +1,104 @@
+*{
+    padding:0;
+    margin: 0;
+   
+}
+.App{
+    overflow-y: hidden;
+}
+
+.rotas{
+    width: 90%;
+    height: 300px;
+    background-color:transparent;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.rotas a{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.slider{
+    width: 290px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+.sectionHome div h3{
+    width: 100%;
+    height: 30px;
+    padding-top: 30px;
+    text-align: justify;
+}
+.sectionHome div p{
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    font-size: 16px;
+    color:grey;
+    
+}
+
+footer form input::placeholder{
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+footer div.finalfooter{
+    width: 50%;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer  .pfooter{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+@media(min-width: 768px){
+    .slider{
+        grid-column-start:3;
+       
+    }
+  }
+  @media(min-width:1024px){
+    footer div.finalfooter{
+        align-items: flex-start;
+    }
+}
+
+
+
+@media(min-width: 1440px){
+    footer div.finalfooter{
+       margin-top:-150px;
+       justify-content:space-between;
+       flex-direction:row;
+       margin-left:100px;
+    }
+
+    footer div.finalfooter span{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .slider{
+        width:490px;
+    }
+   }
+
+   @media ( min-width:1920px){
+    .slider{
+        width:590px;
+    }
+   }
